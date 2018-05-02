@@ -1,5 +1,5 @@
-$('input[type="submit"]').on('submit', function(event) {
-    event.preventdefault();
+$('#submit').submit(function(event) {
+    //event.preventdefault();
     console.log('submiting');
 });
 
