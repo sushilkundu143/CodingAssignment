@@ -4,7 +4,7 @@ $.validator.setDefaults({
     }
 });
 jQuery.validator.addMethod("lettersonly", function(value, element) {
-    return this.optional(element) || /^[a-z]+$/i.test(value);
+    return this.optional(element) || /^[A-Za-z\s]+$/i.test(value);
   }, "Letters only please"); 
 $().ready(function() {
     // validate the comment form when it is submitted
